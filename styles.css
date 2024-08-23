@@ -56,6 +56,13 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
+.iframe-container {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -64,4 +71,44 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-pic {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .about-content {
+        margin-left: 0;
+    }
+
+    .iframe-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    .projects {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0.5rem 0;
+    }
 }
