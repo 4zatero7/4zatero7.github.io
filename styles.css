@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #Ff0000;
+    background-color: #FF0000;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -70,6 +70,11 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Neuer Abstand zwischen Footer und Inhalt */
+body {
+    padding-bottom: 60px; /* Höhe des Footers + zusätzlicher Abstand */
 }
 
 /* Responsive Styles */
