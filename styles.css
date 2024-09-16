@@ -12,22 +12,26 @@ header {
     text-align: center;
 }
 
-.about {
+.main-content {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
     padding: 2rem;
     margin: 1rem auto;
-    max-width: 800px;
+    max-width: 1200px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+}
+
+.about {
+    flex: 1;
+    margin-right: 2rem;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    margin-right: 20px;
+    margin-bottom: 1rem;
 }
 
 .about-content {
@@ -35,11 +39,7 @@ header {
 }
 
 .projects {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 2;
 }
 
 h1, h2, h3 {
@@ -74,18 +74,13 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .about {
+    .main-content {
         flex-direction: column;
-        align-items: flex-start;
     }
 
-    .profile-pic {
+    .about {
         margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .about-content {
-        margin-left: 0;
+        margin-bottom: 2rem;
     }
 
     .iframe-container iframe {
@@ -99,11 +94,7 @@ footer {
         padding: 0.5rem 0;
     }
 
-    .about {
-        padding: 1rem;
-    }
-
-    .projects {
+    .main-content {
         padding: 1rem;
     }
 
